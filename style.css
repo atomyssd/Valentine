@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(135deg, #d1b3db, #9960ce);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+    border-radius: 20px;
+    padding: 4rem;
+    background: rgb(243, 176, 245);
+    max-width: 90vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Картинки в ряд */
+.image-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.img {
+    height: 25rem;
+    width: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: hotpink;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.btn {
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes {
+    background-color: #26953c;
+    color: white;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-no {
+    background-color: rgb(166, 37, 82);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
